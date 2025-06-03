@@ -6,6 +6,8 @@ const server = http.createServer((req, res) => {
 });
 
 const PORT = 3000;
-server.listen(PORT, () => {
-    console.log(`Server đang chạy tại http://localhost:${PORT}/`);
+const HOST = '0.0.0.0';  // Lắng nghe trên tất cả các interface
+
+server.listen(PORT, HOST, () => {
+    console.log(`Server đang chạy tại http://${HOST}:${PORT}/`);
 }); 
