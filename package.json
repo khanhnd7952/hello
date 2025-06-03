@@ -1,11 +1,12 @@
 {
-  "name": "hello-world",
+  "name": "hello-world-app",
   "version": "1.0.0",
-  "description": "A simple Hello World Node.js application",
+  "description": "Simple Hello World Express app",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 } 
